@@ -398,3 +398,63 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# Ignore compiled files (C, C++, NASM, etc.)
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.dll
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Node.js dependencies (if you decide to use JavaScript)
+node_modules/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# Ignore build directories (for game dev, OS, etc.)
+build/
+dist/
+
+# Ignore test directories (if you use tests or CI/CD pipelines)
+test/
+tests/
+coverage/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files (for local or server environment variables)
+.env
+
+# Ignore Log files
+*.log
+
+# Ignore MariaDB and database files
+*.sqlite
+*.db
+*.sql
+
+# Ignore compiled files for Arduino, Raspberry Pi, etc.
+*.bin
+*.hex
+
+# Ignore backups
+*.bak
+
+# Ignore personal configurations
+config/
+
+# Ignore certificates or sensitive files (if you manage SSL locally)
+*.pem
+*.key
+*.crt
+
