@@ -1,0 +1,78 @@
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#202020;
+    overflow: hidden;
+    cursor: none;
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
+    align-items:center;
+    justify-content: flex-start;
+    animation: fade .75s none 2s linear;
+}
+
+
+header {
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width:100%;
+}
+div#load-wrapper{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* loader below here!*/
+
+div#load-bar{
+    /* This will work on the loader container */
+    background-color: grey;
+    width: 500px;
+    max-width: 65%;
+    height: 45px;
+    max-height: 5%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/*div#load-bar:hover{*/
+/*    box-shadow: 16px 16px 16px #353535e8,
+     -12px -12px 12px black *//*inset*//*;*/ /* for reverse effect, add the word inset */
+/*}*/
+div#load-fill{
+    /* This wil work on the load fill*/
+    background:linear-gradient(to right,red, green,blue);
+    height: 100%;
+    width: 100%;
+    animation: load 2s linear;
+}
+@keyframes load {
+    from{
+        transform: translateX(-100%);
+    }
+    1%{
+        transform: translateX(-50%);
+    }
+    25%{
+        transform: translateX(-10%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes fade {
+    to{
+        opacity: 0;
+    }
+}
+/* loader above here! */
